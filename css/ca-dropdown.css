@@ -1,7 +1,23 @@
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
 /*OVERRIDES*/
 .jq-dropdown .jq-dropdown-panel {
-	max-width: none;
+	max-width: 320px;
+	min-width: 100px;
+	padding: 0;
+
+	color: #3b3b3f;
+	background: #f7f7fc;
+	border: 1px solid #b1b1bc;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+
+	font-family: 'GE Inspira Sans', sans-serif;
+	font-size: 15px;
 }
+
+/*end overrides*/
 
 div, ul, li, span, a {
 	box-sizing: border-box;
@@ -13,11 +29,9 @@ ul {
 }
 
 .ca-menu-window {
-	min-width: 140px;
+	min-width: 100px;
 	max-width: 320px;
 	width: 140px;
-	/*height: 140px;*/
-	/*padding: 20px;*/
 
 	position: relative;
 	overflow: hidden;
@@ -29,34 +43,66 @@ ul {
 	left: 0;
 
 	position: absolute;
-	/*overflow: auto;*/
 }
 
 .ca-menus-container .ca-menu {
 	width: 140px;
-	display: inline-block;
+	/*padding: 10px 0;*/
+	margin: 0;
+
+	float: left;
 	vertical-align:top;
 }
 
-.ca-menus-container .ca-menu ul li {
+/*MENU OPTIONS*/
+
+/*group options*/
+
+.ca-menus-container .ca-menu ul li.group {
+	background: #efeff4;
+}
+
+.ca-menus-container .ca-menu ul li.group i {
+	float: right;
+}
+
+/*group title*/
+
+.ca-menus-container .ca-menu ul li.title {
 	padding: 5px;
+	border-bottom: 1px solid gray;
+}
+
+.ca-menus-container .ca-menu .ca-menu-title {
+	margin: 0 0 0 5px;
+}
+
+.ca-menus-container .ca-menu ul li.title i {
+	float: none;
+}
+
+/*all options*/
+
+.ca-menus-container .ca-menu ul li {
+	padding: 7px 10px 5px 10px;
 	list-style: none;
 	cursor: pointer;
 }
 
+.ca-menus-container .ca-menu ul li:first-child {
+	padding: 10px 10px 5px 10px;
+}
+
+.ca-menus-container .ca-menu ul li:last-child {
+	padding: 7px 10px 10px 10px;
+}
+
 .ca-menus-container .ca-menu ul li:hover {
-	background: gray;
+	color: #fff;
+	background: #3e87e8;
 }
 
-.ca-menus-container .ca-menu ul li.title {
-	text-align: center;
-	border-bottom: 1px solid gray;
-}
-
-.ca-menus-container .ca-menu ul li i {
-	float: right;
-}
-
-.ca-menus-container .ca-menu ul li.title i {
-	float: left;
+.ca-menu-selected {
+	color: #3e87e8;
+	font-weight: bold;
 }

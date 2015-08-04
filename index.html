@@ -8,6 +8,7 @@
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="bower_components/jquery-jq-dropdown/jquery.dropdown.min.js"></script>
 <link rel="stylesheet" type="text/css" href="bower_components/jquery-jq-dropdown/jquery.dropdown.min.css">
+<link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css">
 
 <script type="text/javascript" src="js/ca-dropdown.js"></script>
 <link rel="stylesheet" type="text/css" href="css/ca-dropdown.css">
@@ -27,14 +28,16 @@
 		        <div class="ca-menu">
 			        <ul>
 			        	<li>Option 1</li>
-			        	<li>Option 2</li>
+			        	<li class="group">Option 2 <i class="fa fa-chevron-right"></i></li>
 			        	<li>Option 3</li>
 			        </ul>
 		        </div>
 		        <!-- This the second menu in the menus container -->
 		        <div class="ca-menu">
 			        <ul>
-			        	<li>Option 1</li>
+			        	<li class="title"><i class="fa fa-chevron-left"></i>Title</li>
+			        	<li>Option 2</li>
+			        	<li>Option 3</li>
 			        	<li>Option 2</li>
 			        	<li>Option 3</li>
 			        </ul>
@@ -44,18 +47,6 @@
     </div>
 </div>
 
-<a href="#" data-jq-dropdown="#jq-dropdown-2">Mega Drop Down</a>
-<div id="jq-dropdown-2" class="jq-dropdown jq-dropdown-tip">
-    <ul class="jq-dropdown-menu">
-        <li><a href="#1">Item 1</a></li>
-        <li><a href="#2">Item 2</a></li>
-        <li><a href="#3">Item 3</a></li>
-        <li class="jq-dropdown-divider"></li>
-        <li><a href="#4">Item 4</a></li>
-        <li><a href="#5">Item 5</a></li>
-        <li><a href="#5">Item 6</a></li>
-    </ul>
-</div>
 
 </body>
 </html>

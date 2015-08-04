@@ -1,6 +1,6 @@
 /*OVERRIDES*/
 .jq-dropdown .jq-dropdown-panel {
-	max-width: 10000px;
+	max-width: none;
 }
 
 div, ul, li, span, a {
@@ -13,8 +13,10 @@ ul {
 }
 
 .ca-menu-window {
-	min-width: 160px;
+	min-width: 140px;
 	max-width: 320px;
+	width: 140px;
+	/*height: 140px;*/
 	/*padding: 20px;*/
 
 	position: relative;
@@ -22,18 +24,39 @@ ul {
 }
 
 .ca-menus-container {
-	/*top: 0;
+	width: 300px;
+	top: 0;
 	left: 0;
 
 	position: absolute;
-	overflow: auto;*/
+	/*overflow: auto;*/
 }
 
 .ca-menus-container .ca-menu {
+	width: 140px;
 	display: inline-block;
+	vertical-align:top;
 }
 
 .ca-menus-container .ca-menu ul li {
 	padding: 5px;
 	list-style: none;
+	cursor: pointer;
+}
+
+.ca-menus-container .ca-menu ul li:hover {
+	background: gray;
+}
+
+.ca-menus-container .ca-menu ul li.title {
+	text-align: center;
+	border-bottom: 1px solid gray;
+}
+
+.ca-menus-container .ca-menu ul li i {
+	float: right;
+}
+
+.ca-menus-container .ca-menu ul li.title i {
+	float: left;
 }

@@ -31,14 +31,15 @@ ul {
 .ca-menu-window {
 	min-width: 100px;
 	max-width: 320px;
-	width: 140px;
+	/*match this with ca-menu*/
+	width: 220px;
 
 	position: relative;
 	overflow: hidden;
 }
 
 .ca-menus-container {
-	width: 300px;
+	width: 500px;
 	top: 0;
 	left: 0;
 
@@ -46,7 +47,8 @@ ul {
 }
 
 .ca-menus-container .ca-menu {
-	width: 140px;
+	/*match this with ca-menu-window*/
+	width: 220px;
 	/*padding: 10px 0;*/
 	margin: 0;
 
@@ -69,7 +71,7 @@ ul {
 /*group title*/
 
 .ca-menus-container .ca-menu ul li.title {
-	padding: 5px;
+	padding: 10px !important;
 	border-bottom: 1px solid gray;
 }
 
@@ -105,4 +107,11 @@ ul {
 .ca-menu-selected {
 	color: #3e87e8;
 	font-weight: bold;
+}
+
+/*dividers*/
+.ca-menus-container .ca-menu ul li.ca-dropdown-divider {
+	border-top: 1px solid #979797;
+	padding: 0;
+	margin: 5px 0;
 }

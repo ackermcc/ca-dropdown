@@ -1,0 +1,39 @@
+/*OVERRIDES*/
+.jq-dropdown .jq-dropdown-panel {
+	max-width: 10000px;
+}
+
+div, ul, li, span, a {
+	box-sizing: border-box;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.ca-menu-window {
+	min-width: 160px;
+	max-width: 320px;
+	/*padding: 20px;*/
+
+	position: relative;
+	overflow: hidden;
+}
+
+.ca-menus-container {
+	/*top: 0;
+	left: 0;
+
+	position: absolute;
+	overflow: auto;*/
+}
+
+.ca-menus-container .ca-menu {
+	display: inline-block;
+}
+
+.ca-menus-container .ca-menu ul li {
+	padding: 5px;
+	list-style: none;
+}
